@@ -3,4 +3,6 @@ project(Uebung7)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Uebung7 main.cpp)
+add_executable(Uebung7 main.cpp
+        Uebung7.cpp
+        Uebung7.h)
