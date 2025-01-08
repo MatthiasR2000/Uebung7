@@ -1,0 +1,3 @@
+/Users/matthiasroos/CLionProjects/Uebung7/cmake-build-debug/CMakeFiles/Uebung7.dir
+/Users/matthiasroos/CLionProjects/Uebung7/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/matthiasroos/CLionProjects/Uebung7/cmake-build-debug/CMakeFiles/rebuild_cache.dir
