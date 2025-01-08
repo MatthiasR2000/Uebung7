@@ -19,18 +19,19 @@ struct Buch {
 };
 
 struct Regal {
-    Buch buecher[35];
+    Buch buecher[25];
     int anzahlBuecher = 0;
 };
 
-void printBuch(Buch buch);
+void printBuch(const Buch& buch);
 string enumToString(BuchTyp typ);
 void addBuch(Regal& regal, Buch buch);
-void sucheBuch(Regal regal, string titel);
-Buch sucheBuch2(Regal regal, string teil);
-int anzSeiten(Regal regal, BuchTyp typ);
-float regalWert(Regal regal);
-void printAll(Regal regal);
-void changeBook(Regal& regal,Buch buch);
+void sucheBuch(const Regal& regal, const string& titel);
+Buch sucheBuch2(const Regal& regal, const string& titel);
+int anzSeiten(const Regal& regal, BuchTyp typ);
+float regalWert(const Regal& regal);
+void printAll(const Regal& regal);
+void changeBook(Regal& regal, const Buch& buch);
+
 
 #endif //UEBUNG7_H

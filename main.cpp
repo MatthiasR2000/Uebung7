@@ -16,6 +16,7 @@ int main() {
     addBuch(regal, buch3);
     addBuch(regal, buch4);
     addBuch(regal, buch5);
+    cout << "Suche Buch" << endl;
     sucheBuch(regal, "GET");
     sucheBuch(regal, "MySQL");
     Buch buch = sucheBuch2(regal, "GET");
