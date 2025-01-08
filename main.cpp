@@ -20,6 +20,7 @@ struct Regal {
 void printBuch(Buch buch);
 void buchHinzufuegen(Regal &regal, Buch buch);
 void sucheBuch(Regal regal, string titel);
+void sucheBuch2(const Regal &regal, const string &titel);
 int anzSeiten(Regal regal, BuchTyp typ);
 float regalWert(Regal regal);
 void printAll(Regal regal);
@@ -76,12 +77,26 @@ void sucheBuch(Regal regal, string titel) {
     for (int i = 0; i < regal.anzahlBuecher; i++) {
         if (regal.buecher[i].titel == titel) {
             printBuch(regal.buecher[i]);
-            return;
+            return;//Ohne will er irgendwie nicht???
         }
     }
     cout << "Das Buch mit dem Titel: " << titel << " wurde nicht gefunden." << endl;
 }
 
+void sucheBuch2(const Regal &regal, const string &titel) {
+    bool gefunden = false;
+
+    for (int i = 0; i < regal.anzahlBuecher; i++) {
+        if (regal.buecher[i].titel == titel) {
+            printBuch(regal.buecher[i]);
+            gefunden = true;
+        }
+    }
+
+    if (!gefunden) {
+        cout << "Das Buch mit dem Titel: " << titel << " wurde nicht gefunden." << endl;
+    }
+}
 
 int anzSeiten(Regal regal, BuchTyp typ) {
     int seitenSumme = 0;
